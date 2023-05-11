@@ -17,12 +17,26 @@ public class FizzBuzzTest {
 
 	
 	@Test
-	public void numberEqualToOne() {
+	public void numberEqualToZero() {
 		int number = 0;
 		String numberReturned = fizzBuz.play(number);
 		Assert.assertEquals("Invalid Input",numberReturned );
 		
 	}
 	
+	@Test
+	public void numberEqualToOne() {
+		int number = 1;
+		String numberReturned = fizzBuz.play(number);
+		Assert.assertEquals("1",numberReturned );
+		
+	}
+	@Test
+	public void numberEqualToThree() {
+		int number = 3;
+		String numberReturned = fizzBuz.play(number);
+		Assert.assertEquals("Fizz",numberReturned );
+		
+	}
 	
 }
