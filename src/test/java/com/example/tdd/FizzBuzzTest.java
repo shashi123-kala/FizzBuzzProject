@@ -73,5 +73,12 @@ public class FizzBuzzTest {
 		Assert.assertEquals("Invalid Input",numberReturned );
 		
 	}
+	@Test
+	public void numberIsFifteen() {
+		int number = 15;
+		String numberReturned = fizzBuz.play(number);
+		Assert.assertEquals("FizzBuzz",numberReturned );
+		
+	}
 	
 }
