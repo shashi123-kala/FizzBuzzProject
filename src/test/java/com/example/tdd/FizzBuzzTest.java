@@ -52,5 +52,26 @@ public class FizzBuzzTest {
 		Assert.assertEquals("Buzz",numberReturned );
 		
 	}
+	@Test
+	public void numberEqualToSix() {
+		int number = 6;
+		String numberReturned = fizzBuz.play(number);
+		Assert.assertEquals("Fizz",numberReturned );
+		
+	}
+	@Test
+	public void numberEqualToTen() {
+		int number = 10;
+		String numberReturned = fizzBuz.play(number);
+		Assert.assertEquals("Buzz",numberReturned );
+		
+	}
+	@Test
+	public void numberIsNegative() {
+		int number = -10;
+		String numberReturned = fizzBuz.play(number);
+		Assert.assertEquals("Invalid Input",numberReturned );
+		
+	}
 	
 }
